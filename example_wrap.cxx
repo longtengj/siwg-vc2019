@@ -3292,6 +3292,19 @@ SWIGINTERNINLINE PyObject*
 #ifdef __cplusplus
 extern "C" {
 #endif
+SWIGINTERN PyObject *_wrap_new_example(PyObject *self, PyObject *args) {
+  PyObject *resultobj = 0;
+  example *result = 0 ;
+  
+  if (!SWIG_Python_UnpackTuple(args, "new_example", 0, 0, 0)) SWIG_fail;
+  result = (example *)new example();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_example, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_example_say_hello(PyObject *self, PyObject *args) {
   PyObject *resultobj = 0;
   example *arg1 = (example *) 0 ;
@@ -3366,19 +3379,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_example(PyObject *self, PyObject *args) {
-  PyObject *resultobj = 0;
-  example *result = 0 ;
-  
-  if (!SWIG_Python_UnpackTuple(args, "new_example", 0, 0, 0)) SWIG_fail;
-  result = (example *)new example();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_example, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_delete_example(PyObject *self, PyObject *args) {
   PyObject *resultobj = 0;
   example *arg1 = (example *) 0 ;
@@ -3413,10 +3413,10 @@ SWIGINTERN PyObject *example_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *
 }
 
 static PyMethodDef SwigMethods[] = {
+	 { "new_example", _wrap_new_example, METH_NOARGS, NULL},
 	 { "example_say_hello", _wrap_example_say_hello, METH_O, NULL},
 	 { "example_change", _wrap_example_change, METH_VARARGS, NULL},
 	 { "example_get_num", _wrap_example_get_num, METH_O, NULL},
-	 { "new_example", _wrap_new_example, METH_NOARGS, NULL},
 	 { "delete_example", _wrap_delete_example, METH_O, NULL},
 	 { "example_swigregister", example_swigregister, METH_O, NULL},
 	 { "example_swiginit", example_swiginit, METH_VARARGS, NULL},

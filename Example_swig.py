@@ -62,6 +62,9 @@ class example(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
+    def __init__(self):
+        _Example_swig.example_swiginit(self, _Example_swig.new_example())
+
     def say_hello(self):
         return _Example_swig.example_say_hello(self)
 
@@ -70,9 +73,6 @@ class example(object):
 
     def get_num(self):
         return _Example_swig.example_get_num(self)
-
-    def __init__(self):
-        _Example_swig.example_swiginit(self, _Example_swig.new_example())
     __swig_destroy__ = _Example_swig.delete_example
 
 # Register example in _Example_swig:
