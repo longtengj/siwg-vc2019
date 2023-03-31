@@ -3129,6 +3129,7 @@ namespace swig {
 }
 
 
+#include <boost/numeric/ublas/matrix.hpp>
 #include "example.h"
 
 

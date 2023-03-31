@@ -20,8 +20,9 @@ using namespace std;
 	class MatrixConvert
 	{
 	public:
-		MatrixConvert(size_t lens) : M(8, lens / 8), nRows_(8192), nCols_(lens / nRows_), OtD(nRows_, nCols_)
+		MatrixConvert(size_t lens) : M(8, lens / 8), nRows_(8192), nCols_(lens / 8192), OtD(8192, lens / 8192)
 		{
+
 		}
 		MatrixConvert(const MatrixConvert& other) = delete;
 

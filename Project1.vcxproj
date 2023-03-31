@@ -131,6 +131,9 @@
     <PreBuildEvent>
       <Command>swig -c++ -python  example.i</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>test.py</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

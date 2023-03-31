@@ -4,7 +4,7 @@
 example::example()
 {
     cout << "example::example()" << endl;
-    //MatrixConvert<uint16_t> m(1000);
+    MatrixConvert<uint16_t> m(8182);
     cout << " MatrixConvert<uint16_t> m(1000);" << endl;
 }
 void example::say_hello(void) {
